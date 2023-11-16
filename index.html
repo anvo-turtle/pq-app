@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PQ App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Clock Display -->
+    <p>Current Time: <span id="clock"></span></p>
+
+    <!-- Progression Bar -->
+    <div class="progress-container">
+        <div id="progressBar" class="progress-bar"></div>
+    </div>
+    <p><span id="currentReps">0</span>/100 pq reps</p>
+    <button onclick="incrementProgress()">Increment</button>
+
+    <!-- PQ Charge -->
+    <p>PQ Charge: <span id="pqCharge">0%</span></p>
+
+    <!-- Total PQ Reps -->
+    <p>Total PQ Reps: <span id="totalReps">0</span></p>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
