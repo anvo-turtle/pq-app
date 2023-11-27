@@ -39,6 +39,13 @@ function incrementProgress() {
     updateUI();
 }
 
+function resetCurrentReps() {
+    currentReps = 0;
+    localStorage.setItem('currentReps', currentReps);
+    updateUI();
+}
+
+
 function computeDecay() {
     const lastUpdated = parseInt(localStorage.getItem('lastUpdated') || Date.now());
     const elapsedTime = Date.now() - lastUpdated;
